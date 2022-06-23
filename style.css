@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+    
+}
+p{
+    font-size: 16px;
+    color: #1d2421;
+    margin: 15px 0 20px 0;
+   
+}
+
+div > p {
+    font-weight: bold;
+}
+
+.main-div {
+    min-width: 400px;
+    margin: 5px 10px;
+    padding: 20px;
+}
+
+#word-el{
+    color: blue;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#pronounciation-el {
+    color: lightblue;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+#synonyms-div, #antonyms-div, #def-div{
+    background: lightgrey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 2px 0px 10px 0px;
+}
+
+h4{
+    font-size: 30px;
+    color: rgb(8, 7, 15);
+    text-align: center;
+}

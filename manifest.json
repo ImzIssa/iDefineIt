@@ -1,0 +1,45 @@
+{
+	"manifest_version":3,
+	"name": "iDefineIt",
+	"description": "Select (Double click) text from web page to get definition",
+	"version": "1.0",
+	"offline_enabled": true,
+	"permissions": [
+		"storage",
+		"activeTab",
+		"scripting",
+		"tabs"
+	],
+	"host_permissions": [
+		
+	],
+	"icons":{
+		"16":"./images/icon-16x16.jpg",
+		"32":"./images/icon-32x32.jpg",
+		"48":"./images/icon-48x48.jpg",
+		"128":"./images/icon-128x128.jpg"
+	},
+	"background":{
+		"service_worker": "background.js"
+	},
+	"action":{
+		"default_icon":{
+			"16":"/images/icon-16x16.jpg",
+			"32":"/images/icon-32x32.jpg",
+			"48":"/images/icon-48x48.jpg",
+			"128":"/images/icon-128x128.jpg"
+		},
+		"default_popup":"popup.html",
+		"default_title": "iDefineIt"
+	},
+	"web_accessible_resources":[
+		
+	],
+	"content_scripts":[
+		{
+			"matches":["<all_urls>"],
+			"run_at":"document_idle",
+			"js": ["content_script.js"]
+		}
+	]
+}
